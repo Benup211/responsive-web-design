@@ -6,6 +6,7 @@
     font-family: 'Poppins','Times New Roman','Courier New', Courier, monospace;
 }
 body{
+    min-height: 200vh;
     display: flex;
     justify-content: center;
     background-image: linear-gradient(to right top, #cdced1, #bcbec6, #abadba, #9c9daf, #8d8da3);
@@ -15,12 +16,14 @@ body{
     padding: 20px;
     border: 4px solid whitesmoke;
     border-radius: 10px;
+    height: 100%;
+    width:auto;
 }
 h1,p{
     text-align: center;
     padding-bottom:5px;
 }
-.description{
+#description{
     border-bottom:2px solid whitesmoke;
 }
 header>p{
@@ -41,6 +44,13 @@ input[type="text"],input[type="email"],input[type="number"],#dropdown,input[type
     padding: 10px;
     border: none;
     border-radius: 3px;
+}
+input[type="submit"]{
+    background-color: whitesmoke;
+}
+input[type="submit"]:hover{
+    background-color: #abadba;
+    border: 1px solid black;
 }
 label{
     display: block;
