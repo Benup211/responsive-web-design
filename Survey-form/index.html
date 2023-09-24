@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Survey-Form</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="title">Coursera Survey Form</h1>
+            <p class="description">Your assistance in enhancing the platform is greatly appreciated</p>
+        </header>
+        <main>
+            <form id="survey-form" action="#" method="post">
+                <section class="form-elements">
+                    <label id="name-label" for="name">Name</label>
+                    <input  class="form-input" type="text" name="name" id="name" placeholder="Enter your name" required>
+                </section>
+                <section class="form-elements">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email" required>
+                </section>
+                <section class="form-elements">
+                    <label id="number-label" for="number">Age<span>
+                        (optional)</span></label>
+                    <input type="number" name="age" id="number" min="16" max="120" placeholder="Age">
+                </section>
+                <section class="form-elements">
+                    <label for="dropdown">Which option best describes your current role?</label>
+                    <select name="option" id="dropdown">
+                        <option value="">Select current role</option>
+                        <option value="student">Student</option>
+                        <option value="professional">Professional</option>
+                        <option value="educator">Educator</option>
+                        <option value="other">Other</option>
+                    </select>
+                </section>
+                <section class="form-elements">
+                    <label for="recommend">Would you recommend Coursera to a friend?</label>
+                    <label for="yes"><input type="radio" name="recommend-group" id="yes" value="yes"> Yes</label>
+                    <label for="no"><input type="radio" name="recommend-group" id="no" value="no"> No</label>
+                </section>
+                <section class="form-elements">
+                    <label for="improvement">What would you like to see improved?</label>
+                    <label>
+                        <input type="checkbox" name="improvement" value="Content"> Content
+                    </label>
+                    <label>
+                        <input type="checkbox" name="improvement" value="Website"> Website
+                    </label>
+                    <label>
+                        <input type="checkbox" name="improvement" value="Customer Support"> Customer Support
+                    </label>
+                    <label>
+                        <input type="checkbox" name="improvement" value="Course Selection"> Course Selection
+                    </label>
+                </section>
+                <section class="form-elements">
+                    <label for="suggestion">Any comments or suggestions?</label>
+                    <textarea id="comments" name="comment" placeholder="Enter your comment/suggestion"></textarea>
+                </section>
+                <input type="submit" value="Submit">
+            </form>
+        </main>
+    </div>
+</body>
+</html>

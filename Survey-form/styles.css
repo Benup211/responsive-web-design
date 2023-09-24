@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins','Times New Roman','Courier New', Courier, monospace;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(to right top, #cdced1, #bcbec6, #abadba, #9c9daf, #8d8da3);
+}
+.container{
+    margin: 20px;
+    padding: 20px;
+    border: 4px solid whitesmoke;
+    border-radius: 10px;
+}
+h1,p{
+    text-align: center;
+    padding-bottom:5px;
+}
+.description{
+    border-bottom:2px solid whitesmoke;
+}
+header>p{
+    font-size: 14px;
+    font-style: italic;
+}
+header{
+    margin: 5px;
+}
+main{
+    padding: 10px;
+}
+.form-elements{
+    margin:20px 0px;
+}
+input[type="text"],input[type="email"],input[type="number"],#dropdown,input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+}
+label{
+    display: block;
+}
+textarea{
+    overflow-x: hidden;
+    width: 100%;
+    resize: vertical;
+    padding: 10px;
+}
+@media screen and (max-width:480px) {
+    .container{
+        max-width: 350px;
+    }
+}
