@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Poppins','Times New Roman', Times, serif;
+}
+body{
+    width: 100%;
+    height: auto;
+}
+main{
+    padding: 10px;
+    border: 10px solid whitesmoke;
+}
+
+h1{
+    font-size: 46px;
+}
+h1,p,figcaption{
+    text-align: center;
+}
+figure>*{
+    margin: 8px 0px;
+}
+p{
+    font-style: italic;
+}
+#img-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+img{
+    height: auto;
+    object-fit: contain;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: whitesmoke;
+    padding: 10px 0px;
+}
+
+@media screen and (max-width:480px) {
+    img{
+        max-width: 300px;
+        border: 2px solid black;
+    }
+    section>ul{
+        padding: 20px;
+        max-width: 350px;
+    }
+}
+@media screen and ((min-width:481px) and (max-width:768px)){
+    img{
+        max-width: 480px;
+        border: 2px solid black;
+    }
+    section>ul{
+        padding: 20px;
+        max-width: 500px;
+    }
+}
+@media screen and (min-width:769px) {
+    img{
+        max-width: 700px;
+        border: 2px solid black;
+    }
+    section>ul{
+        padding: 20px;
+        max-width: 700px;
+    }
+    
+}
