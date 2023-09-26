@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Python Documentation</title>
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+
+    <body>
+        <div id="documentation">
+            <nav id="navbar">
+                <header>Python Documentation</header>
+                <a href="#Introduction" class="nav-link">Introduction</a>
+                <a href="#Hello_world" class="nav-link">Hello World</a>
+                <a href="#Variable_Declaration" class="nav-link"
+                    >Variable Declaration</a
+                >
+                <a href="#Data_Types" class="nav-link">Data Types</a>
+                <a href="#User_Input" class="nav-link">User Input</a>
+            </nav>
+            <main id="main-doc">
+                <section class="main-section" id="Introduction">
+                    <header>Introduction</header>
+                    <article>
+                        <p>
+                            Python is a versatile, cross-platform programming
+                            language known for its simplicity and readability.
+                            It serves as an object-oriented scripting language
+                            and is particularly valued for its compact and
+                            lightweight nature. In various host environments,
+                            Python seamlessly integrates with the objects within
+                            its surroundings, granting developers programmatic
+                            control.
+                        </p>
+                        <p>
+                            Python boasts a comprehensive standard library
+                            replete with essential objects, including data
+                            structures like lists and dictionaries, date and
+                            time handling with the datetime module, and
+                            mathematical capabilities through the math module.
+                            The language also provides a robust set of core
+                            elements encompassing operators, control structures,
+                            and statements.
+                        </p>
+                        <p>
+                            Python's adaptability shines through its ability to
+                            be extended for a myriad of purposes through the
+                            incorporation of additional modules and packages:
+                        </p>
+                        <ul>
+                            <li>
+                                <strong>Client-side Python:</strong> Python
+                                extends its core functionality to the
+                                client-side, offering modules and libraries that
+                                enable applications to manipulate web browsers
+                                and their Document Object Models (DOM). This
+                                empowers developers to dynamically interact with
+                                web pages, responding to user interactions such
+                                as clicks, form submissions, and page
+                                navigation.
+                            </li>
+                            <li>
+                                <strong>Server-side Python:</strong> On the
+                                server-side, Python offers an array of modules
+                                tailored to server applications. These modules
+                                facilitate tasks such as communicating with
+                                databases, maintaining state across multiple
+                                invocations of an application, and handling file
+                                operations efficiently on a server
+                            </li>
+                        </ul>
+                    </article>
+                </section>
+                <section class="main-section" id="Hello_world">
+                    <header>Hello World</header>
+                    <article>
+                        <p>
+                            "Hello, World!" is a classic and simple program that
+                            is often used to introduce beginners to a new
+                            programming language. In Python, it can be done with
+                            just one line of code:
+                        </p>
+                        <code> print("Hello, World!") </code>
+                        <p>
+                            You can run this code in a Python environment, and
+                            it will display "Hello, world!" in the console.
+                        </p>
+                    </article>
+                </section>
+                <section class="main-section" id="Variable_Declaration">
+                    <header>Variable Declaration</header>
+                    <article>
+                        <p>
+                            In Python, you can declare variables by assigning a
+                            value to a variable name. You don't need to specify
+                            the data type explicitly because Python is
+                            dynamically typed. Here's how you declare variables
+                            in Python:
+                        </p>
+                        <code>
+                            #Variable declaration and assignment variable_name=value # Example variable declarations name ="John"
+                            age = 30 is_student = True
+                        </code>
+                        <p>
+                            You can then use these variables in your Python code
+                            to store and manipulate data as needed.
+                        </p>
+                    </article>
+                </section>
+                <section class="main-section" id="Data_Types">
+                    <header>Data Types</header>
+                    <article>
+                        <p>
+                            Python is a dynamically typed language, which means
+                            that you don't need to explicitly declare the data
+                            type of a variable. Python infers the data type
+                            based on the value assigned to the variable.
+                            However, Python supports various data types to
+                            represent different kinds of values. Here are some
+                            of the common data types in Python:
+                        </p>
+                        <ul>
+                            <li>
+                                int: Represents integer numbers, e.g., 42, -10,
+                                0.
+                            </li>
+                            <li>
+                                float: Represents floating-point (decimal)
+                                numbers, e.g., 3.14, -0.5.
+                            </li>
+                            <li>
+                                bool: Represents boolean values, which can be
+                                either True or False.
+                            </li>
+                            <li>
+                                str: Represents a sequence of characters
+                                enclosed in single ('') or double ("") quotes,
+                                e.g., "Hello, World!".
+                            </li>
+                            <li>
+                                list: Represents an ordered collection of
+                                elements. Lists can contain elements of
+                                different data types, and they are mutable (can
+                                be changed), e.g., [1, 2, 3, "apple"].
+                            </li>
+                            <li>
+                                tuple: Similar to a list but immutable (cannot
+                                be changed), e.g., (1, 2, 3, "banana").
+                            </li>
+                            <li>
+                                set: Represents an unordered collection of
+                                unique elements, e.g., {1, 2, 3}.
+                            </li>
+                            <li>
+                                dict: Represents a collection of key-value
+                                pairs. Keys must be unique, e.g., {"name":
+                                "Alice", "age": 30}.
+                            </li>
+                            <li>
+                                NoneType: Represents the absence of a value or a
+                                null value, denoted by None.
+                            </li>
+                        </ul>
+                        <code>
+                            x = 42 print(type(x)) # Outputs: (class 'int') y =
+                            "Hello, World!" print(type(y)) # Outputs: (class
+                            'str')
+                        </code>
+                    </article>
+                </section>
+                <section class="main-section" id="User_Input">
+                    <header>User Input</header>
+                    <article>
+                        <p>
+                            To take user input in Python, we can use the input()
+                            function. Here's the syntax:
+                        </p>
+                        <code>
+                            input_string = input("Please enter a value: ")
+                        </code>
+                        <p>
+                            The input() function takes an argument which is the
+                            prompt string. The user is prompted to enter a
+                            value, and this value is returned as a string. To
+                            take integer input, we can use the int() function to
+                            convert the string input to an integer. Here's an
+                            example:
+                        </p>
+                        <code>
+                            input_string = input("Please enter an integer: ")
+                            integer_input = int(input_string)
+                        </code>
+                        <p>
+                            To take decimal input, we can use the float()
+                            function to convert the string input to a float.
+                            Here's an example:
+                        </p>
+                        <code
+                            >input_string = input("Please enter a decimal: ")
+                            decimal_input = float(input_string)
+                        </code>
+                    </article>
+                </section>
+            </main>
+        </div>
+    </body>
+</html>
