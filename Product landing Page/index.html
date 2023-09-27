@@ -10,33 +10,150 @@
         <header id="header">
             <div id="image-box">
                 <img
-                    src="https://img.freepik.com/free-vector/isometric-laptop-with-shopping-cart-keypad_1262-16544.jpg?w=740&t=st=1695749182~exp=1695749782~hmac=13628e9350b88ee6cfd11d4408362941961e3de375ae079d5de79747963fc3c1"
-                    alt=""
+                    src="https://a.storyblok.com/f/171241/x/c0542fc733/mrbeast-burger_classic-beast.svg"
+                    alt="logo"
                     id="header-img"
                 />
             </div>
             <nav id="nav-bar">
-                <a href="#features">Features</a>
-                <a href="#">Product</a>
-                <a href="#">Contact</a>
+                <a class="nav-link" href="#attribute">Features</a>
+                <a class="nav-link" href="#product">Video</a>
+                <a class="nav-link" href="#cards">Product</a>
             </nav>
         </header>
         <main>
             <div id="hero">
                 <h2>Welcome To Our Product</h2>
-                <form action="https://www.freecodecamp.com/email-submit" method="post">
-                    <input type="email" id="email" name="email" required placeholder="Enter your Email">
-                    <input type="submit" value="Get Started">
+                <form
+                    action="https://www.freecodecamp.com/email-submit"
+                    method="post"
+                    id="form"
+                >
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                        placeholder="Enter your Email"
+                    />
+                    <input type="submit" value="Get Started" id="submit" />
+                    <link
+                        rel="stylesheet"
+                        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+                        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+                        crossorigin="anonymous"
+                    />
                 </form>
             </div>
-            <section id="features">
+            <section id="attribute">
                 <h2>Key Features</h2>
                 <ul>
-                    <li>Feature 1</li>
-                    <li>Feature 2</li>
-                    <li>Feature 3</li>
+                    <li>
+                        <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
+                        <div class="features">
+                            <h2>Premium Materials</h2>
+                            <p>
+                                Our trombones use the shiniest brass which is
+                                sourced locally. This will increase the
+                                longevity of your purchase.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i class="fa fa-3x fa-truck"></i>
+                        </div>
+                        <div class="features">
+                            <h2>Fast Shipping</h2>
+                            <p>
+                                We make sure you recieve your trombone as soon
+                                as we have finished making it. We also provide
+                                free returns if you are not satisfied.
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="icon">
+                            <i
+                                class="fa fa-3x fa-battery-full"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+                        <div class="features">
+                            <h2>Quality Assurance</h2>
+                            <p>
+                                For every purchase you make, we will ensure
+                                there are no damages or faults and we will check
+                                and test the pitch of your instrument.
+                            </p>
+                        </div>
+                    </li>
                 </ul>
             </section>
+            <section id="product">
+                <iframe id="video"
+                    src="https://www.youtube-nocookie.com/embed/dg2Ag3e8W-Q?si=L_dIKGwzWgnb8u8F"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+            </section>
+            <section id="cards">
+                <div class="card">
+                    <h2>Beast Style</h2>
+                    <div class="card-body">
+                        <img
+                            src="https://olo-images-live.imgix.net/4d/4d71bf752a8844a9830d518c80ff1fb4.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=528&h=352&fit=fill&fm=png32&bg=transparent&s=10266275df3fbe1696a478a2fbfbe73c&quot"
+                            alt="Beast style"
+                            id="card-img"
+                        />
+                        <p>
+                            Mouthwatering, indulgent burger,known for massive
+                            size.
+                        </p>
+                    </div>
+                    <button class="card-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <h2>Chris Style</h2>
+                    <div class="card-body">
+                        <img
+                            src="https://olo-images-live.imgix.net/4c/4c8e163b2936452b98608a1e22a9beef.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=528&h=352&fit=fill&fm=png32&bg=transparent&s=645b03c074ecb442de00e36d2025222d&quot"
+                            alt="Chris Style"
+                            id="card-img"
+                        />
+                        <p>
+                            Portuguese-inspired burger with spicy sausage and
+                            tangy cheese
+                        </p>
+                    </div>
+                    <button class="card-btn">Order Now</button>
+                </div>
+                <div class="card">
+                    <h2>Chandler Style</h2>
+                    <div class="card-body">
+                        <img
+                            src="https://olo-images-live.imgix.net/2e/2e719431c2474c91ac3cf0e9f2ad04fc.jpg?auto=format%2Ccompress&q=60&cs=tinysrgb&w=528&h=352&fit=fill&fm=png32&bg=transparent&s=53cfeacd12be092e74c0025baea0991e&quot"
+                            alt="Chandler Style"
+                            id="card-img"
+                        />
+                        <p>
+                            Classic cheeseburger with bacon, lettuce, and
+                            tomato.
+                        </p>
+                    </div>
+                    <button class="card-btn">Order Now</button>
+                </div>
+            </section>
         </main>
+        <footer>
+            <a href="https://www.facebook.com/Benup211" target="_blank"
+                ><i class="fab fa-facebook fa-2x fa-fw"></i
+            ></a>
+            <a href="https://github.com/Benup211" target="_blank"
+                ><i class="fab fa-github fa-2x fa-fw"></i
+            ></a>
+        </footer>
     </body>
 </html>
