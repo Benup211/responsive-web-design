@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --text: #edeef2;
+    --background: #0f1015;
+    --primary: #cbc5b4;
+    --secondary: #232d1f;
+    --accent: #a19778;
+}
+body{
+    background-color: var(--background);
+}
+#navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+#sociallink>a{
+    display: block;
+    width: 200px;
+    height: 20px;
+    color: red;
+}
