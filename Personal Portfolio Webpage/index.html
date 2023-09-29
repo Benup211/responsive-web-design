@@ -12,10 +12,10 @@
         <div id="logo">
             <a href="#contact"><h2 id="name-logo">benupghimire</h2></a>
         </div>
-        <div id="profile-link">
+        <div id="profile-alllink">
             <a href="https://www.facebook.com/Benup211" target="_blank"><i class="fab fa-facebook fa-2x fa-fw"></i></a>
             <a href="https://www.linkedin.com/in/benup211/" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
-            <a href="https://github.com/Benup211" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+            <a id="profile-link" href="https://github.com/Benup211" target="_blank"><i class="fab fa-github fa-2x"></i></a>
         </div>
     </nav>
     <main>
@@ -143,11 +143,21 @@
 
         </section>
         <section id="contact">
-            <h2 id="header-projects">Contact</h2>
+            <div id="contact-intro">
+                <article id="contact-article">
+                    <h2>Contact</h2>
+                    <p>I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+                </article>
+            </div>
+            <div id="contact-form">
+                <form action="#contact" method="#" id="form-box">
+                    <input name="name" type="text" placeholder="NAME" required>
+                    <input name="email" type="email" placeholder="EMAIL" required>
+                    <textarea name="MESSEGE" id=""placeholder="Enter your message" required></textarea>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
         </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
